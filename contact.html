@@ -79,5 +79,21 @@
     </footer>
 
     <script src="script.js"></script>
+    
+     <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const confirmation = document.getElementById("confirmation");
+            fetch("/", {
+                method: "POST",
+                body: new FormData(form)
+            }).then(() => {
+                form.reset();
+                form.classList.add("hidden");
+                confirmation.classList.remove("hidden");
+            }).catch(error => console.error("Error submitting form", error));
+        }
+    </script>
   </body>
 </html>
