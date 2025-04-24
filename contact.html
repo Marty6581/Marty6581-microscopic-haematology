@@ -45,22 +45,22 @@
         <li>Students are recommended to search our Helpful Links for other websites and Forums that may better, and more conveniently, answer the questions they may have.</li>
       </ul>
       <br>
-      <div class="formShell">
+     <div class="container">
         <form name="contact" method="POST" data-netlify="true" onsubmit="handleSubmit(event)">
             <input type="hidden" name="form-name" value="contact">
-            
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" class="fieldEntry" required>
+            <input type="text" id="name" name="name" required>
             
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" class="fieldEntry" required>
+            <input type="email" id="email" name="email" required>
             
             <label for="message">Message</label>
-            <textarea id="message" name="message" class="fieldEntry" rows="4" required></textarea>
+            <textarea id="message" name="message" rows="4" required></textarea>
             
-            <button type="submit" class="sendBeacon">Send</button>
+            <button type="submit">Send</button>
         </form>
-        <p id="confirmation" class="cloak">Thank you! Your message has been sent.</p>
+        <p id="confirmation" class="hidden">Thank you! Your message has been sent.</p>
+    </div>
     </div>
       
 
