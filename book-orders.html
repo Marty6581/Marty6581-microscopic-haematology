@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microscopic Haematology - Book Orders</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Microscopic Haematology / Book Orders</h1>
+      <p>A Practical Guide for the Laboratory</p>
+      <img
+        class="header-image"
+        src="Images/header-image.png"
+        alt="Transparent Logo"
+      />
+    </header>
+
+    <nav>
+      <button class="hamburger">☰</button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="red-cell-nomenclature.html">Red Cell Nomenclature</a></li>
+        <li><a href="paediatric-reference-ranges.html">Paediatric Reference Ranges</a></li>
+        <li><a href="paediatric-lymphocytes.html">Paediatric Lymphocytes</a></li>
+        <li><a href="morphology-workshop-videos.html">Morphology Workshop Videos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <section id="case-links">
+      <h2>Books Available for Purchase</h2>
+      <br>
+      <h3>Microscopic Haematology – A Practical Guide for the Laboratory</h3>
+      <img
+          class="book-image"
+          src="Images/microscopic-haematology-pracGuide.jpg"
+          alt="A Practical Guide for the Laboratory Book Cover"
+        />
+        <p>Microscopic Haematology – A Practical Guide for the Laboratory
+          <br>
+          $95 + $9.90 postage within Australia (inc. GST)</p>
+          <p><strong>How to order</strong></p>
+          <p>Please fill out the form (bottom of page) including the book title and quantity you'd like order. I will reply with payment instructions (bank deposit details)</p>
+          <br>
+          <hr>
+          <br>
+          <h3>Microscopic Haematology – A Practical Guide for the Laboratory</h3>
+      <img
+          class="book-image"
+          src="Images/CasesInMicroscopicHaematalogy.jpg"
+          alt="Cases In Microscopic Haematology Book Cover"
+        />
+        <p>Cases In Microscopic Haematology
+          <br>
+          $95 + $9.90 postage within Australia (inc. GST)</p>
+          <p><strong>How to order</strong></p>
+          <p>PPlease fill out the form (bottom of page) including the book title and quantity you'd like order. I will reply with payment instructions (bank deposit details)</p>
+          <br>
+          <hr>
+          <br>
+          <h3>Bundle</h3>
+          <br>
+          <h3>Microscopic Haematology – A Practical Guide for the Laboratory and Cases In Microscopic Haematology (Both books)</h3>
+      <img
+          class="book-image"
+          src="Images/CasesInMicroscopicHaematalogy.jpg"
+          alt="Cases In Microscopic Haematology Book Cover"
+        />
+        <p>Bundled together you’ll receive both Microscopic Haematology – A Practical Guide for the Laboratory and Cases In Microscopic Haematology
+          <br>
+          $190 + $15.90 postage within Australia (inc. GST)</p>
+          <p><strong>How to order</strong></p>
+          <p>Please fill out the form (bottom of page) including the book title and quantity you'd like order. I will reply with payment instructions (bank deposit details)</p>
+          <br>
+          <br>
+          <div class="formShell">
+            <form name="contact" method="POST" data-netlify="true" onsubmit="handleSubmit(event)">
+                <input type="hidden" name="form-name" value="contact">
+                
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="fieldEntry" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="fieldEntry" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="fieldEntry" rows="4" required></textarea>
+                
+                <button type="submit" class="sendBeacon">Send</button>
+            </form>
+            <p id="confirmation" class="cloak">Thank you! Your message has been sent.</p>
+        </div>
+
+
+      
+      </section>
+
+    </div>
+
+    <footer>
+      <p>
+        © <span id="copyright-year"></span> Microscopic Haematology. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f6f5f5;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #863CFA, #FA3C79);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    object-fit: cover;
+    z-index: 0;
+}
+
+header h1, header p {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Nav menu CSS */
+
+nav {
+    background: #532e8a;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #e670ce;
+    font-weight: bold;
+    border-bottom: 1px solid #e670ce;
+}
+
+/* Hamburger */
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 2px solid #e8e8e8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.book-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    /* padding: 0.5rem 1rem; /* Reduced vertical padding */
+    /* background: #532e8a;*/
+    color: rgb(0, 0, 0);
+    /* border-radius: 10px 10px 0 0;*/
+    position: relative;
+    bottom: 0;
+    font-size: 12pt;
+    /* line-height: 1.4; /* Slightly tighter line spacing */
+    /* min-height: 40px; /* Ensures a compact height */
+}
+
+
+
+/* quick Links */
+
+#quick-links ul {
+    list-style-type: none; /* Adds square bullet points */
+    padding: 0;
+    margin-left: 0px; /* Adjusts indentation */
+}
+
+#quick-links ul li {
+    margin: 10px 0;
+}
+
+#quick-links ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333333;
+}
+
+#quick-links ul li a:hover {
+    color: #C43CFA;
+}
+
+/* Book Order Link */
+
+#book-link a {
+    text-decoration: none;
+  }
+  
+  #book-link a:hover {
+    text-decoration: none;
+  }
+  
+  #book-link a h2 {
+    color: #333;
+  }
+  
+  #book-link a:hover h2 {
+    color: #C43CFA;
+    cursor: pointer;
+  }
+  
+
+
+
+
+/* Case Study Selections */
+
+#case-links ul {
+    list-style-type: square; /* Adds square bullet points */
+    padding: 0;
+    margin-left: 20px; /* Adjusts indentation */
+}
+
+#case-links ul li {
+    margin: 10px 0;
+}
+
+#case-links ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+#case-links ul li a:hover {
+    color: #C43CFA;
+}
+
+#case-links ul li::marker {
+    color: #532e8a; /* Change bullet color */
+    font-size: 1.2em; /* Adjust size if needed */
+}
+
+/* Book quick Links */
+
+#book-quick-links ul {
+    list-style-type: square; /* Adds square bullet points */
+    padding: 0;
+    margin-left: 20px; /* Adjusts indentation */
+}
+
+#book-quick-links ul li {
+    margin: 10px 0;
+}
+
+#book-quick-links ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333333;
+}
+
+#book-quick-links ul li a:hover {
+    color: #C43CFA;
+}
+
+#book-quick-links ul li::marker {
+    color: #532e8a; /* Change bullet color */
+    font-size: 1.2em; /* Adjust size if needed */
+}
+
+
+/* back to top */
+.back-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #532e8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.back-to-top:hover {
+    background-color: #C43CFA;
+}
+
+@media (max-width: 1080px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-image {
+        opacity: 0.3;
+    }
+}
+
+/* collapsable section */
+
+.collapsible-section {
+    margin-bottom: 20px;
+}
+
+.toggle-header {
+    cursor: pointer;
+    margin: 0px 20px 20px 0px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.section-content {
+    max-height: 100px; /* Adjust this to control the preview height */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.section-content.expanded {
+    max-height: max-content; /* will display any amount of text/images */
+}
+
+.toggle-header:hover {
+    background-color: #fceafd;
+}
+
+/* 2 cols for quick links section for case studies */
+
+.two-column-list {
+    column-count: 2; /* Splits the list into 2 columns */
+    column-gap: 20px; /* Space between columns */
+    list-style-type: none; /* Optional: removes bullets if desired */
+    padding: 0; /* Optional: removes default padding */
+}
+
+.two-column-list li {
+    break-inside: avoid; /* Prevents list items from splitting across columns */
+    margin-bottom: 10px; /* Space between items */
+}
+
+#quick-links {
+    max-width: 1200px; /* Optional: limits width for better column balance */
+    margin: 0 auto; /* Optional: centers the section */
+}
+
+/* case study image captions styling */
+
+.figure-container {
+    display: flex;
+    gap: 20px; /* Adjusted spacing between figures */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    width: fit-content;
+    background-color: #f3f3f3;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: flex-start; /* Aligns the items to the start (left) */
+}
+
+figure {
+    text-align: center;
+    max-width: 200px; /* Adjusted width for larger screens */
+    flex: 1 1 auto; /* Allows figures to shrink if needed */
+    min-width: 120px; /* Prevents figures from becoming too small */
+}
+
+figcaption {
+    margin-bottom: 10px;
+    font-size: 10pt;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .figure-container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        gap: 15px; /* Reduced gap for vertical stacking */
+        padding: 15px;
+        justify-content: flex-start; /* Aligns items to the start (left) */
+    }
+
+    figure {
+        max-width: 100%; /* Ensures figures are full-width in the stack */
+    }
+}
+
+@media (max-width: 480px) {
+    .figure-container {
+        flex-direction: column; /* Stack vertically on very small screens */
+        gap: 10px; /* Further reduced gap */
+        justify-content: flex-start; /* Aligns items to the start (left) */
+    }
+
+    figure {
+        max-width: 100%; /* Ensures figures are full-width in the stack */
+    }
+}
+
+
+/* Reset all global styles for this specific <ul> */
+
+.custom-list {
+    list-style-type: disc;  /* Ensures bullet points are shown */
+    padding-left: 20px;     /* Adds indentation */
+    margin: 0;              /* Removes any default margin */
+  }
+
+
+  
+/* Basic style to remove default list indentation */
+.aligned-list {
+    /* Removes the browser's default padding that indents the list */
+    padding-left: 0;
+    /* Ensures the bullet point appears outside the text flow */
+    list-style-position: outside;
+    /* Adds a margin to the left of the list, effectively indenting
+       the bullet itself. Adjust '1.5em' to match desired indent
+       or typical paragraph indent if paragraphs were indented.
+       If paragraphs start at the very edge with no indent,
+       you might set this margin-left to 0. */
+    margin-left: 1.5em;
+  }
+
+  /* Optional: Add some space below each list item */
+  .aligned-list li {
+    margin-bottom: 0.3em;
+  }
+
+  /* Optional: Add some space below paragraphs for better separation */
+  p {
+    margin-bottom: 1em;
+  }
+
+  /* Table Style */
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    min-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+table thead {
+    background: linear-gradient(135deg, #863CFA, #FA3C79);
+    color: white;
+    font-weight: bold;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #fceafd;
+    transition: 0.3s ease-in-out;
+}
+
+table td:first-child {
+    font-weight: bold;
+    color: #532e8a;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+}
+
+
+/* CSS for Responsive YouTube Videos */
+
+.video-container {
+    position: relative; /* Establishes a positioning context for the iframe */
+    padding-bottom: 56.25%; /* Maintains a 16:9 aspect ratio (height/width = 9/16 = 56.25%) */
+    height: 0; /* The container itself has no height; the padding creates the space */
+    overflow: hidden; /* Ensures content outside the container is clipped */
+    max-width: 100%; /* Ensures the container doesn't exceed the width of its parent */
+    background: #000; /* Optional: black background while video loads */
+  }
+  
+  .video-container iframe {
+    position: absolute; /* Positions the iframe relative to the container */
+    top: 0;           /* Aligns the iframe to the top of the container */
+    left: 0;          /* Aligns the iframe to the left of the container */
+    width: 100%;      /* Makes the iframe fill the container's width */
+    height: 100%;     /* Makes the iframe fill the container's height (created by padding) */
+    border: 0;        /* Removes the default iframe border */
+  }
+
+
+  /* Contact Form */
+
+/* Renamed to .formShell */
+.formShell {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Keep the form tag as-is for HTML compatibility */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Keep label as-is */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+}
+
+/* Renamed input and textarea as a group to .fieldEntry */
+.fieldEntry {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Specific styling for textarea */
+textarea.fieldEntry {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Renamed button to .sendBeacon */
+.sendBeacon {
+    padding: 10px;
+    background: #e829b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sendBeacon:hover {
+    background: #b948e9;
+}
+
+/* Renamed .hidden to .cloak */
+.cloak {
+    display: none;
+}
+
+/* Buy Button */
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: #ff0000; /* subtle hover effect */
+  }
+  
