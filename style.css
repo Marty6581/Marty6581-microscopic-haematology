@@ -70,9 +70,9 @@ nav a {
 }
 
 nav a:hover, nav a.active {
-    color: #e670ce;
-    font-weight: bold;
-    border-bottom: 1px solid #e670ce;
+    color: #e670ce !important;
+    font-weight: bold !important;
+    border-bottom: 1px solid #e670ce !important;
 }
 
 /* Hamburger */
