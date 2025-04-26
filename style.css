@@ -69,7 +69,13 @@ nav a {
     transition: color 0.3s;
 }
 
-nav a:hover, nav a:active {
+nav a:hover {
+    color: #e670ce;
+    font-weight: bold;
+    border-bottom: 1px solid #e670ce;
+}
+
+nav a.active {
     color: #e670ce;
     font-weight: bold;
     border-bottom: 1px solid #e670ce;
