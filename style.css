@@ -75,7 +75,7 @@ nav a:hover {
     border-bottom: 1px solid #e670ce;
 }
 
-nav a.active {
+nav a:active {
     color: #e670ce;
     font-weight: bold;
     border-bottom: 1px solid #e670ce;
