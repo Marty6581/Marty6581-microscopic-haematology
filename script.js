@@ -1,22 +1,23 @@
 
         // Toggle hamburger menu
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+    document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
 
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
 
-        document.addEventListener("DOMContentLoaded", () => {
-            const links = document.querySelectorAll(".nav-menu a");
-            const currentUrl = window.location.pathname.split("/").pop(); // Get the current file name
+    const links = document.querySelectorAll(".nav-menu a");
+    const currentUrl = window.location.pathname.split("/").pop(); // Get the current file name
 
-            links.forEach(link => {
-                if (link.getAttribute("href") === currentUrl) {
-                    link.classList.add("active");
-                }
-            });
-        });
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentUrl) {
+            link.classList.add("active");
+        }
+    });
+});
+
 
 
         // Collapsable part for case studies sections 
